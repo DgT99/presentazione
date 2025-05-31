@@ -30,10 +30,9 @@
                         moz-do-not-send="true"
                         src="icone/maximize-normal.png" alt=""
                         onclick="document.body.style.transform =
-                        'scale(0.3)';
-                        document.body.style.transformOrigin = 'top
-                        left';" style=" width: 21px; height: 21px;"
-                        vspace="2" hspace="2" align="right"></font></span></strong><strong><span
+                        'scale(0.3)';document.body.style.transformOrigin
+                        = 'top left';" style=" width: 21px; height:
+                        21px;" vspace="2" hspace="2" align="right"></font></span></strong><strong><span
                     style="font-weight: bold;"><font size="+1"><img
                         moz-do-not-send="true"
                         src="icone/minimize-normal.png" alt=""
@@ -48,9 +47,6 @@
             style="font-weight: bold;"></span></strong><br>
         <strong><span style="font-weight: bold;"><font size="+1"> </font></span></strong>
         <div style="text-align: center;">
-          <div style="border: 1px solid rgb(0, 0, 0); padding: 10px;
-            width: 150px; text-align: center; position: absolute; left:
-            1173px; top: 151px;"> Età: <span id="eta"></span> anni </div>
           <div style="text-align: left; margin-left: 320px;">
             <script>
   const giorno = 18; // tuo giorno di nascita
@@ -72,8 +68,51 @@
                 style="font-weight: bold;"><font size="+1"><font
                     size="+2">Diego Tortoroglio</font></font></span></strong><strong><span
                 style="font-weight: bold;"></span></strong></div>
-          <p><br>
+          <p style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <br>
           </p>
+          <div style="border: 1px solid rgb(0, 0, 0); padding: 10px;
+            width: 150px; text-align: center; margin-left: 1200px;">
+            Età: <span id="eta"></span> anni
+          </div>
+          <div style="margin-left: 160px;">
+            <script>
+  window.onload = function () {
+    const giorno = 18;
+    const mese = 09;
+    const anno = 1999;
+
+    const oggi = new Date();
+    let eta = oggi.getFullYear() - anno;
+
+    if (
+      oggi.getMonth() + 1 < mese ||
+      (oggi.getMonth() + 1 === mese && oggi.getDate() < giorno)
+    ) {
+      eta--;
+    }
+
+    document.getElementById("eta").textContent = eta;
+  };
+</script>
+            <script>
+  const giorno = 18; // tuo giorno di nascita
+  const mese = 09;   // tuo mese (ottobre = 10)
+  const anno = 1999; // tuo anno di nascita
+
+  const oggi = new Date();
+  let eta = oggi.getFullYear() - anno;
+
+  if (
+    oggi.getMonth() + 1 < mese ||
+    (oggi.getMonth() + 1 === mese && oggi.getDate() < giorno)
+  ) {
+    eta--;
+  }
+
+  document.getElementById("eta").textContent = eta;
+</script></div>
+          <p style="text-align: center;"> </p>
           <h1><strong><span style="font-weight: bold;"></span></strong></h1>
           <div style="text-align: right; margin-left: 40px;"><br>
           </div>
@@ -246,33 +285,21 @@
           <ul style="text-align: left; margin-left: 320px;">
           </ul>
           <h3 style="margin-left: 400px; text-align: left;"><br>
-            <span style="color: rgb(0, 0, 102);"></span></h3>
-          <h3 style="margin-left: 400px; text-align: left;"><br>
-            <span style="color: rgb(0, 0, 102);"></span></h3>
-          <h3 style="margin-left: 400px; text-align: left;"><br>
           </h3>
-          <h3 style="margin-left: 400px; text-align: left;"><br>
-            <span style="color: rgb(0, 0, 102);"></span></h3>
-          <h3 style="margin-left: 400px; text-align: left;"><span
+          <h3 style="margin-left: 320px; text-align: left;"> <span
               style="color: rgb(0, 0, 102);">Attualmente sono impegnato
-              nello studio dell’architettura IPv6 e delle infrastrutture
-              in fibra ottica</span></h3>
-          <div style="position: absolute; left: 1164px; top: 286px;">&nbsp;&nbsp;
-
-
-
-
-
-
-
-
-
-
-            altri progetti a questo <span style="background-color:
-              rgb(51, 102, 255);"><a moz-do-not-send="true"
-                href="incostruzione.html">link!</a></span><br>
-          </div>
-          <hr style=" width: 50%; height: 2px;">
+              nello studio dell’architettura IPv6 </span><br>
+          </h3>
+          <h3 style="margin-left: 320px; text-align: left;"><span
+              style="color: rgb(0, 0, 102);"></span><span style="color:
+              rgb(0, 0, 102);">e delle infrastrutture in fibra ottica</span></h3>
+          <br>
+          <br>
+          <hr style=" width: 50%; height: 2px;"><br>
+            <br>
+            <br>
+            <br>
+            <br>
           <div style="text-align: left; margin-left: 400px;">
             <table style="text-align: left; width: 779px; height: 163px;
               background-color: rgb(255, 255, 102);" border="1"
@@ -284,17 +311,18 @@
                     nuovi progetti,<br>
                     per trovare soluzioni finalizzate alla loro
                     applicazione pratica in contesti reali e operativi.<br>
-                    allo stesso tempo cercando di collocarli&nbsp;
-                    correttamente in base al contesto più adatto.<br>
+                    <img moz-do-not-send="true"
+src="file:///home/diego/progetti/presentazione-personale-web/presentazione/icone/51VB2VYVFtL._AC_UF1000,1000_QL80_.jpg"
+                      alt="icona triangolo avvertimento" style="width:
+                      89px; height: 80px; position: absolute; left:
+                      205px; top: 1094px;">allo stesso tempo cercando di
+                    collocarli&nbsp; correttamente in base al contesto
+                    più adatto.<br>
                     <br>
                     "Tra la sedia e il pc le comptenze trasversali sono
                     quasi necessarie per comprendere a fondo un
                     problema, avere un' intuizione e arrivare alla
-                    soluzione"<img moz-do-not-send="true"
-                      src="icone/51VB2VYVFtL._AC_UF1000,1000_QL80_.jpg"
-                      alt="icona triangolo avvertimento" style="width:
-                      89px; height: 80px; position: absolute; left:
-                      285px; top: 1037px;"></td>
+                    soluzione"</td>
                 </tr>
               </tbody>
             </table>
